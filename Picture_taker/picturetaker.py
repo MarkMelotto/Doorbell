@@ -11,7 +11,7 @@ def take_a_picture_with_preview():
         cv2.imshow("cam-test",img)
         cv2.waitKey(0)
         cv2.destroyWindow("cam-test")
-        cv2.imwrite("filename.jpg",img) #save image
+        cv2.imwrite("../Pictures/current picture.jpg",img) #save image
         return True
     return False
 
@@ -21,8 +21,8 @@ def take_a_picture():
     s, img = cam.read()
     if s:    # frame captured without any errors
         # namedWindow("cam-test",CV_WINDOW_AUTOSIZE)
-        cv2.namedWindow("cam-test", cv2.WINDOW_AUTOSIZE)
-        cv2.imwrite("filename.jpg",img) #save image
+        # cv2.namedWindow("cam-test", cv2.WINDOW_AUTOSIZE)
+        cv2.imwrite("../Pictures/current picture.jpg",img) #save image
         return True
     return False
 
@@ -35,4 +35,5 @@ def return_a_picture():
     return False
 
 if __name__=="__main__":
-    take_a_picture_with_preview()
+    # take_a_picture_with_preview()
+    take_a_picture()
