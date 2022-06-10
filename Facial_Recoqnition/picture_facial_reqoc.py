@@ -59,6 +59,7 @@ def save_face_from_picure(img):
         # cv2.rectangle(img, (x, y), (x+w, y+h), (0, 0, 0), 2)
     # Display the output
     cv2.imwrite("../Pictures/faces/current_face.jpg",face) #save image
+    return face
 
 def test_save_face_from_picure(img):
     # Load the cascade
