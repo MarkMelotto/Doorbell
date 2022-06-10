@@ -1,5 +1,5 @@
 from Picture_taker.picturetaker import return_a_picture
-from Facial_Recoqnition.picture_facial_reqoc import facial_reqocnition
+from Facial_Recoqnition.picture_facial_reqoc import facial_recognition
 from Facial_Recoqnition.video_facial_recoq import video_FR
 
 class doorbell:
@@ -13,7 +13,7 @@ class doorbell:
 
     def picture_FR(self):
         img = self.img
-        facial_reqocnition(img)
+        facial_recognition(img)
 
     def continuous_stream(self):
         video_FR()
